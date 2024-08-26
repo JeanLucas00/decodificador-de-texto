@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Decodificador HiTech</h1>
-    </header>
-    <img src="./img/fundo.jpg" alt="Imagem HiTech">
+    <div class="container">
+        <h1>Decodificador de Texto:</h1>
+        <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea><br>
+        <button id="encryptBtn" onclick="encryptText()">Criptografar</button>
+        <button id="decryptBtn" onclick="decryptText()">Descriptografar</button><br>
+        <button id="copyBtn" onclick="copyText()">Copiar</button>
+        <h2>Texto Criptografado:</h2>
+        <textarea id="outputText" readonly></textarea><br>
+        <button id="copyBtn" onclick="copyText()">Copiar</button>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
